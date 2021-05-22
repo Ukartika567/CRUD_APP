@@ -1,0 +1,16 @@
+{
+    "params": {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/crudapplication",
+        "prod_uri":"mysql://root:@localhost/crudapplication",
+        "blog_namae": "Programmer",
+        "fb_url":"http://www.facebook.com",
+        "tw_url":"http://www.twitter.com",
+        "linkedin_url":"http://www.linkedin.com",
+        "insta_url":"http://www.instagram.com",
+        "google_url":"http://www.google.com",
+        "gh_url":"http://www.github.com",
+        "upload_location":"C:\\Users\\Shivansh\\Documents\\FLASK CLASSESS\\Projects\\CRUD Project\\static\\img"
+        
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> EMS </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="csrf-token" content="kmapods5wQ5L1hn7rcR9OPst7EsN0gC7SrHh3m9K" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/footer.css')}}">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet"
+        type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            background-color: rgb(154, 189, 189);
+        }
+
+        .footer {
+            margin-top: 80px;
+        }
+
+        .alert-dismissible .btn-close {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            z-index: 2;
+            padding: 1.25rem, 1rem;
+        }
+
+        button:not(:disabled) {
+            cursor: pointer;
+
+        }
+
+        .btn-close {
+            box-sizing: content-box;
+            width: 1em;
+            height: 1em;
+            color: #000;
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+            background-position-x: center;
+            background-position-y: center;
+            background-size: 1em;
+            background-repeat: no-repeat;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: transparent;
+            border: 0;
+            border-radius: .25rem;
+            opacity: .5;
+        }
+
+        [type=button],
+        [type=reset],
+        [type=submit],
+        button {
+            -webkit-appearance: button
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            margin: 1.2%;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+
+        }
+
+        button {
+            -webkit-: horizontal-tb !important;
+            text-rendering: auto;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-shadow: none;
+            display: inline-block;
+            text-align: center;
+            align-items: flex-start;
+            font: 400 13.3333px Arial;
+        }
+
+        .alert-warning {
+            background-color: #ffecb5;
+            border-color: #ffecb5;
+
+        }
+        .nav-item{
+            margin-left: 550px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+            <a class="navbar-brand mx-3" href="/">Employee Management system</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Logout <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    {% block body %} {% endblock %}
+
+    </div>
+
+    <!--footer starts from here-->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">CONTACT INFO</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p><i class="fa fa-location-arrow"></i> location </p>
+                    <p><i class="fa fa-phone"></i> +91-[123] 456-7890 </p>
+                    <p><i class="fa fa fa-envelope"></i> xyz@gmail.com.com </p>
+
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">MODULES</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="/assignment">Assignment Module</a></li>
+                        <li><a href="/admin">Admin Module</a></li>
+                        <li><a href="/login">Login Module</a></li>
+                        <li><a href="/teacher">User Module</a></li>
+                        <li><a href="/subject">Subject Module</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">PROJECT LINKS</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">ABOUT PROJECT</h5>
+                    <!--headin5_amrc ends here-->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam provident dignissimos dolorum
+                        nulla illo veniam, quas, deserunt ex accusamus, alias eius nobis.
+                        Cumque delectus consectetur neque repellendus molestiae dolores qui.</p>
+                    <!--footer_ul2_amrc ends here-->
+                </div>
+            </div>
+        </div>
+
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center">Copyright @2017 | Designed With by <a href="#">{{params['blog_name']}}</a></p>
+
+        <ul class="social_footer_ul">
+            <li><a href="{{params['fb_url']}}"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="{{params['tw_url']}}"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="{{params['google_url']}}"><i class="fab fa-google"></i></a></li>
+            <li><a href="{{params['insta_url']}}"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="{{params['linkedin_url']}}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="{{params['gh_url']}}"><i class="fab fa-github"></i></a></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+        </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
